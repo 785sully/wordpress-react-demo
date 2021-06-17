@@ -3,7 +3,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/Styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 export default function Posts() {
 	const [posts, setPosts] = useState([]);
@@ -13,7 +13,6 @@ export default function Posts() {
 		try {
 			const res = await fetch(url);
 			const data = await res.json();
-			// console.log(data);
 			return data;
 		} catch (err) {
 			console.error(err);
